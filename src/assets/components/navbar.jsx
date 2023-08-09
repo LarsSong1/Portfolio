@@ -13,10 +13,10 @@ function Navbar() {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">
                     <li className="item">
-                        <Link to='/' className='text-xl sm:text-sm lg:text-xl font-light'>Inicio</Link>    
+                        <Link to='/' className='text-xl sm:text-sm lg:text-xl font-light fuenteHurme'>Inicio</Link>    
                     </li>
                     <li className='item'>
-                        <Link to='/contact' className='text-xl sm:text-sm lg:text-xl font-light'>Contacto</Link>
+                        <Link to='/contact' className='text-xl sm:text-sm lg:text-xl font-light fuenteHurme'>Contacto</Link>
                     </li>
                 </ul>
             </div>

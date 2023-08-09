@@ -1,5 +1,21 @@
 #root {
   max-width: 1550px;
+
  
 }
 
+
+
+
+
+.fuenteHurme {
+  font-family: 'Hurme Geometric Sans 1', sans-serif;
+  font-weight: bold;
+  
+}
+
+.fuenteCentury {
+  font-family: 'Century Gothic', sans-serif;
+  font-weight: 400;
+  
+}

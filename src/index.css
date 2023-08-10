@@ -5,7 +5,7 @@
 :root {
   box-sizing: border-box;
   --color-morado: #A48BD1;
-  --color-celeste: #4976E;
+  --color-celeste: #4976ED;
   --color-blanco: #F6F6F6;
   background-color: var(--color-blanco);
 }

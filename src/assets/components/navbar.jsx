@@ -7,7 +7,7 @@ function Navbar() {
         <div className="navbar z-50">
             <div className="flex-1">
                 <Link to={'/'} className="btn btn-ghost normal-case text-xl">
-                    <img className="w-24 h-auto" src={Logo} alt="Logo Portfolio" />
+                    <img className="w-24 h-auto logo" src={Logo} alt="Logo Portfolio" />
                 </Link>
             </div>
             <div className="flex-none">

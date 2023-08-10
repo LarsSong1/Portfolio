@@ -7,3 +7,18 @@
 .menu .item a{
     color: var(--color-blanco);
 }
+
+@media screen and (width > 200px) {
+
+    .logo {
+        mix-blend-mode: difference;
+    }
+
+
+
+
+}
+
+.logo {
+    mix-blend-mode: difference;
+}

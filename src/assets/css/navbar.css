@@ -8,17 +8,10 @@
     color: var(--color-blanco);
 }
 
-@media screen and (width > 200px) {
+@media screen and (max-width : 760px) {
 
-    .logo {
-        mix-blend-mode: difference;
+    .navbar .logo {
+        filter: hue-rotate(160deg) invert(1)
     }
 
-
-
-
-}
-
-.logo {
-    mix-blend-mode: difference;
 }

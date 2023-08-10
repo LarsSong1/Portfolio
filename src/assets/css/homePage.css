@@ -3,6 +3,8 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
+
 
 
 }
@@ -18,7 +20,7 @@
     background-color: black;
     z-index: 10;
     animation: slideWidth 1s ease-in-out forwards;
-    
+
 
 }
 
@@ -44,7 +46,7 @@
     color: black;
 }
 
-.heroSection .text-blendBottom{
+.heroSection .text-blendBottom {
     color: hsl(0, 0%, 11%)
 }
 
@@ -52,27 +54,32 @@
 @media screen and (max-width: 760px) {
     @keyframes slideWidth {
         from {
-          width: 30%;
+            width: 30%;
         }
-        to {
-          width: 100%;
-        }
-      }
 
-      .heroSection .text-blend {
-        color: var(--color-blanco);
-    
+        to {
+            width: 100%;
+        }
     }
 
-    .heroSection .text-blendBottom{
+    .heroSection .text-blend {
+        color: var(--color-blanco);
+
+    }
+
+    .heroSection .text-blendBottom {
         color: var(--color-blanco)
     }
 
 
+
+
     .heroSection .text-blendGradient {
-        background: linear-gradient(0deg, rgba(73,118,237,1) 25%, rgba(246,246,246,1) 100%);
+        background: linear-gradient(0deg, rgba(73, 118, 237, 1) 25%, rgba(246, 246, 246, 1) 100%);
         background-clip: text;
     }
+
+
 
 }
 

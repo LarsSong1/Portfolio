@@ -1,7 +1,8 @@
 
 import '../css/homePage.css'
 import cerebro from '../img/cerebro.svg'
-
+import react from '../img/react.svg'
+import django from '../img/django.svg'
 
 
 const HomePage = () => {
@@ -42,8 +43,52 @@ const HomePage = () => {
                 text-xl font-light fuenteHurme sm:relative md:absolute lg:absolute xl:absolute text-center sm:mt-20 z-40 text-blendBottom sm:mb-10 md:mb-20 mb-20 lg:mb-20 xl:mb-0 '>Convierte tu presencia en línea en algo impresionante con mi diseño web personalizado</h2>
                 <a className="btn btn-xs sm:btn-md md:btn-md lg:btn-lg relative z-40 right-0   bg-gradient-to-tl from-black via-violet-900 to-slate-300 text-white  bottom-10 fuenteHurme font-normal sm:relative md:absolute lg:absolute xl:absolute xl:right-40 lg:right-40">Proyectos</a>
             </section>
-            <section>
-                <h1>Hola</h1>
+            <section className='designWeb relative flex '>
+                <div className='white-box flex flex-col justify-end'>
+                    <div className='mini-box absolute left-36 top-52  rounded-sm h-40 flex flex-col justify-center content-center pe-10 ps-10'>
+                        <h1 className='text-center text-black text-2xl font-normal  sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme mb-8'>Mi perfil como <br /> Diseñador <br /> <strong>Web</strong></h1>
+                        <h2 className='text-center text-black fuenteCentury'>Descubre quien esta detras de la <br /> pantalla y mis habilidades como <br /> Freelancer</h2>
+                    </div>
+                    <div className='relative text-end pe-10 mb-5'>
+                        <h5 className='text-black font-bold fuenteHurme'>Diseño</h5>
+                        <hr className='border-black opacity-30 ms-5 border-t-2 my-4' />
+                        <ul className='flex justify-end gap-2 mt-2 design-Links'>
+                            <li>
+                                <a href="" className='opacity-70'>
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" className='opacity-70'>
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className='middle-box'>
+                </div>
+                <div className='dark-box flex flex-col items-center relative'>
+                    <div className='w-auto relative xl:ps-20 pe-20 top-40'>
+                        <h5 className='font-extrabold text-left mb-5 text-jus'>Web</h5>
+                        <p className='text-justify mb-5'>He trabajado con diversas tecnologias y lenguajes de programación. en particular tengo experiencia en el uso de React y Django para el desarrollo de aplicaciones webs modernas y escalables</p>
+                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
+                            <img src={django} alt="Django Logo" />
+                            <div className='ps-5'>
+                                <h5 className='font-extrabold'>django</h5>
+                                <p>Back-End</p>
+                            </div>
+                        </div>
+                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
+                            <img src={react} alt="React Logo" />
+                            <div className='ps-5'>
+                                <h1 className='font-extrabold'>React</h1>
+                                <p>Front-End</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
         </main>

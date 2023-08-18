@@ -27,6 +27,8 @@
 
 .heroSection .container {
     height: 100vh;
+    
+
 
 
 }
@@ -90,7 +92,52 @@
         mix-blend-mode: difference;
     }
 
+}
 
 
+
+/* Perfil como Diseñador Web */
+
+.designWeb {
+    height: 100vh;
+    width: 100vw;
+}
+
+.designWeb .white-box {
+    background-color: var(--color-blanco);
+    width: 30%;
+}
+
+
+.designWeb .white-box .mini-box {
+    background-color: var(--color-blanco);
+    height: 50%;
+    
+    
+    
+    
+}
+
+.designWeb .middle-box {
+    background: url('../img/avatar.png') rgb(16, 16, 16) 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 40%;
+}
+
+
+
+.designWeb .dark-box {
+    background-color: black;
+    width: 30%;
 
 }
+
+
+.designWeb .design-Links li a ion-icon {
+    color: black;
+    font-size: 20px;
+    
+}
+

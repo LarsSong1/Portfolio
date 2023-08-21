@@ -43,9 +43,9 @@ const HomePage = () => {
                 text-xl font-light fuenteHurme sm:relative md:absolute lg:absolute xl:absolute text-center sm:mt-20 z-40 text-blendBottom sm:mb-10 md:mb-20 mb-20 lg:mb-20 xl:mb-0 '>Convierte tu presencia en línea en algo impresionante con mi diseño web personalizado</h2>
                 <a className="btn btn-xs sm:btn-md md:btn-md lg:btn-lg relative z-40 right-0   bg-gradient-to-tl from-black via-violet-900 to-slate-300 text-white  bottom-10 fuenteHurme font-normal sm:relative md:absolute lg:absolute xl:absolute xl:right-40 lg:right-40">Proyectos</a>
             </section>
-            <section className='designWeb relative flex '>
-                <div className='white-box flex flex-col justify-end'>
-                    <div className='mini-box absolute left-36 top-52  rounded-sm h-40 flex flex-col justify-center content-center pe-10 ps-10'>
+            <section className='designWeb relative flex sm:flex-col md:flex-row lg:flex-row xl:flex-row flex-col'>
+                <div className='white-box flex flex-col justify-start sm:justify-start md:justify-end lg:justify-end xl:justify-end'>
+                    <div className='mini-box relative left-0 top-10 sm:top-10 md:top-52 lg:top-52 xl:top-52 md:left-10 lg:left-10 sm:left-0 xl:left-24 rounded-sm h-40 flex flex-col justify-center content-center pe-10 ps-10 sm:relative md:absolute lg:absolute xl:absolute mb-20 sm:mb-20 md:mb-0 lg:mb-0 xl:mb-0'>
                         <h1 className='text-center text-black text-2xl font-normal  sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme mb-8'>Mi perfil como <br /> Diseñador <br /> <strong>Web</strong></h1>
                         <h2 className='text-center text-black fuenteCentury'>Descubre quien esta detras de la <br /> pantalla y mis habilidades como <br /> Freelancer</h2>
                     </div>
@@ -69,7 +69,7 @@ const HomePage = () => {
                 <div className='middle-box'>
                 </div>
                 <div className='dark-box flex flex-col items-center relative'>
-                    <div className='w-auto relative xl:ps-20 pe-20 top-40'>
+                    <div className='w-auto relative xl:ps-20 pe-20 top-40 md:ps-20 ps-20'>
                         <h5 className='font-extrabold text-left mb-5 text-jus'>Web</h5>
                         <p className='text-justify mb-5'>He trabajado con diversas tecnologias y lenguajes de programación. en particular tengo experiencia en el uso de React y Django para el desarrollo de aplicaciones webs modernas y escalables</p>
                         <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>

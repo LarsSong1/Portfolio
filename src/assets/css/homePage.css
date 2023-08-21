@@ -106,6 +106,7 @@
 .designWeb .white-box {
     background-color: var(--color-blanco);
     width: 30%;
+
 }
 
 
@@ -122,7 +123,6 @@
     background: url('../img/avatar.png') rgb(16, 16, 16) 80%;
     background-repeat: no-repeat;
     background-size: cover;
-
     width: 40%;
 }
 
@@ -141,3 +141,27 @@
     
 }
 
+
+@media screen and (max-width: 760px) {
+    .designWeb .white-box {
+        background-color: var(--color-blanco);
+        width: 100%;
+        height: 50vh;
+    }
+    
+    
+ 
+    .designWeb .middle-box {
+        min-height: 50vh;
+        width: 100%;
+    }
+    
+    
+    
+    .designWeb .dark-box {
+        min-height: 100vh;
+        width: 100%;
+    
+    }
+
+}

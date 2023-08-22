@@ -165,3 +165,26 @@
     }
 
 }
+
+
+/* Carrusel */
+.sliderSection {
+    min-height: 100vh;
+}
+
+
+
+.sliderSection .swiperSlideSection {
+    height: 100vh;
+}
+
+
+.swiperSlideSection .swiperSlideText {
+    width: 40vw;
+    height: 100%;
+}
+
+.swiperSlideSection .swiperSlideImage {
+    width: 60vw;
+    height: 70vh;
+}

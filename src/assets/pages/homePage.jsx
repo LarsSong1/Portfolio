@@ -3,6 +3,7 @@ import '../css/homePage.css'
 import cerebro from '../img/cerebro.svg'
 import react from '../img/react.svg'
 import django from '../img/django.svg'
+import SliderProjects from '../components/sliderProjects'
 
 
 const HomePage = () => {
@@ -89,6 +90,9 @@ const HomePage = () => {
                     </div>
                 </div>
 
+            </section>
+            <section>
+                <SliderProjects/>
             </section>
 
         </main>

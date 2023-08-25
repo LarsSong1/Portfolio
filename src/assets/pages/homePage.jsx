@@ -70,7 +70,7 @@ const HomePage = () => {
                 <div className='middle-box'>
                 </div>
                 <div className='dark-box flex flex-col items-center relative'>
-                    <div className='w-auto relative xl:ps-20 pe-20 top-40 md:ps-20 ps-20'>
+                    <div className='w-auto relative xl:ps-20 pe-20 top-20 md:ps-20 ps-20 sm:top-20 md:top-40 lg:top-40 xl:top-40'>
                         <h5 className='font-extrabold text-left mb-5 text-jus'>Web</h5>
                         <p className='text-justify mb-5'>He trabajado con diversas tecnologias y lenguajes de programación. en particular tengo experiencia en el uso de React y Django para el desarrollo de aplicaciones webs modernas y escalables</p>
                         <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
@@ -91,8 +91,11 @@ const HomePage = () => {
                 </div>
 
             </section>
-            <section>
+            <section className='slideContent'>
                 <SliderProjects/>
+            </section>
+            <section>
+                <h1>gopla</h1>
             </section>
 
         </main>

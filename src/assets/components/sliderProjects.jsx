@@ -9,7 +9,7 @@ import tourByEcu from '../img/tourbyecu.svg'
 import django2 from '../img/django2.svg'
 import bootstrap from '../img/bootstrap.svg'
 import '../css/homePage.css'
-import { IoArrowForwardCircle, IoArrowBackCircleSharp } from "react-icons/io5";
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -34,14 +34,13 @@ const SliderProjects = () => {
                 nextEl: '.button-next-slide',
                 prevEl: '.button-prev-slide'
             }}
-            pagination={{clickable: true}}
-
+            pagination={{ clickable: true }}
         >
             {dataSwiper.map((item, index) => (
-                <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative'>
-                    <div className='swiperSlideText flex items-center'>
-                        <div className='w-7/12 mx-auto flex flex-col items-center justify-center space-y-20'>
-                            <h1 className='text-black text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurme '>{item.titulo}</h1>
+                <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0'>
+                    <div className='swiperSlideText flex items-center flex-row sm:flex-col md:flex-col justify-center'>
+                        <div className='w-full mx-auto flex flex-col items-center justify-center space-y-0 sm:space-y-0 md:space-y-20 lg:space-y-20 xl:space-y-20 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:mt-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0' >
+                            <h1 className='text-black text-4xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurme '>{item.titulo}</h1>
                             <p className='text-black text-center font-light fuenteCentury '>{item.description}</p>
                             <h5 className='text-black text-center font-bold fuenteCentury text-lg'>Tecnologías</h5>
                             <div className='flex flex-grow justify-center gap-8'>
@@ -52,21 +51,17 @@ const SliderProjects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='bg-black relative flex justify-center items-center swiperSlideImage top-0 z-10'>
+                    <div className='bg-black relative flex justify-center items-center swiperSlideImage top-0 z-10 sm:flex-col'>
                         <img src={item.image} alt="Demostración Portfolio" loading='lazy' className='p-20' />
-                        <div className='absolute flex left-0 -bottom-20 z-50'>
+                        <div className='absolute flex  bottom-5 z-50 sm:bottom-20 lg:left-0 xl:left-0 lg:-bottom-20 xl:-bottom-20 '>
                             <div className='button-prev-slide'>
-                                <IoArrowBackCircleSharp color='black' size={'3em'} />
+                                <ion-icon name="arrow-back-circle-outline"></ion-icon>
                             </div>
                             <div className='button-next-slide '>
-                                <IoArrowForwardCircle color='black' size={'3em'} />
+                                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
                             </div>
-
                         </div>
                     </div>
-
-
-
                 </SwiperSlide>
             ))}
 

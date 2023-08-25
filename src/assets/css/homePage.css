@@ -27,7 +27,7 @@
 
 .heroSection .container {
     height: 100vh;
-    
+
 
 
 
@@ -113,10 +113,10 @@
 .designWeb .white-box .mini-box {
     background-color: var(--color-blanco);
     height: 50%;
-    
-    
-    
-    
+
+
+
+
 }
 
 .designWeb .middle-box {
@@ -138,7 +138,7 @@
 .designWeb .design-Links li a ion-icon {
     color: black;
     font-size: 20px;
-    
+
 }
 
 
@@ -146,30 +146,35 @@
     .designWeb .white-box {
         background-color: var(--color-blanco);
         width: 100%;
-        height: 50vh;
+        height: 350px;
     }
-    
-    
- 
+
+
+
     .designWeb .middle-box {
-        min-height: 50vh;
-        width: 100%;
+        display: none;
     }
-    
-    
-    
+
+ 
+
+
+
     .designWeb .dark-box {
-        min-height: 100vh;
+        min-height: 600px;
         width: 100%;
-    
+
     }
 
 }
 
 
 /* Carrusel */
+.slideContent {
+    height: 100vh;
+}
+
 .sliderSection {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 
@@ -187,4 +192,77 @@
 .swiperSlideSection .swiperSlideImage {
     width: 60vw;
     height: 70vh;
+}
+
+.sliderSection .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    /* Ajusta la distancia desde la parte inferior según tu diseño */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+    transform: translateX(10%);
+    max-width: 5vw;
+    align-items: center;
+
+
+}
+
+.sliderSection .swiper-pagination::before {
+    content: '';
+    position: absolute;
+    background-color: #000;
+    width: 1px;
+    height: 80%;
+    z-index: 1;
+}
+
+
+.button-prev-slide ion-icon, .button-next-slide ion-icon{
+    color: #000;
+    font-size: 3em;
+    
+}
+
+
+.sliderSection .swiper-pagination-bullet {
+    background-color: var(--color-morado);
+    height: 20px;
+    width: 20px;
+    border-radius: 0px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.sliderSection .swiper-pagination-bullet-active{
+    background: linear-gradient(180deg, #A48BD1 0%, #000 100%);
+}
+
+
+@media screen and (max-width: 760px){
+    .swiperSlideSection .swiperSlideText {
+        width: 94vw;
+        margin: auto;
+       
+    }
+
+
+    .swiperSlideSection .swiperSlideImage {
+        width: 94vw;
+        margin: auto;
+     
+    }
+
+
+    .sliderSection .swiper-pagination {
+        display: none;
+    
+    
+    }
+
+    .button-prev-slide ion-icon, .button-next-slide ion-icon{
+        color: white;
+        
+    }
 }

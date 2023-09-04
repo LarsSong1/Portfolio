@@ -20,6 +20,7 @@
     background-color: black;
     z-index: 10;
     animation: slideWidth 1s ease-in-out forwards;
+    
 
 
 }
@@ -241,16 +242,22 @@
 
 
 @media screen and (max-width: 760px){
+
+   
     .swiperSlideSection .swiperSlideText {
         width: 94vw;
         margin: auto;
+    
        
     }
+
+ 
 
 
     .swiperSlideSection .swiperSlideImage {
         width: 94vw;
         margin: auto;
+        
      
     }
 
@@ -266,3 +273,5 @@
         
     }
 }
+
+

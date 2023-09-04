@@ -14,6 +14,7 @@
 * {
   scrollbar-width: thin;
   scrollbar-color: #A48BD1 #A48BD1;
+  box-sizing: border-box;
 }
 
 /* Chrome, Edge and Safari */

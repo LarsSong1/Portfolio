@@ -6,10 +6,9 @@ import html from '../img/html.svg'
 import css from '../img/css.svg'
 import javaScript from '../img/JavaScript.svg'
 import tourByEcu from '../img/tourbyecu.svg'
-import django2 from '../img/django2.svg'
 import bootstrap from '../img/bootstrap.svg'
 import '../css/homePage.css'
-
+import tyresm from '../img/tyres_m.svg'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,7 +18,7 @@ import 'swiper/css/scrollbar';
 
 const dataSwiper = [
     { titulo: 'TourByEcu', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at quam in dolor efficitur feugiat. Integer tempor ante urna, eu sollicitudin dolor consectetur sit amet. Morbi sed nisi ut', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu },
-    { titulo: 'Funzer', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at quam in dolor efficitur feugiat. Integer tempor ante urna, eu sollicitudin dolor consectetur sit amet. Morbi sed nisi ut', tecnologias: [django2, reactLogo, javaScript, bootstrap] }
+    { titulo: 'Tyres&M', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at quam in dolor efficitur feugiat. Integer tempor ante urna, eu sollicitudin dolor consectetur sit amet. Morbi sed nisi ut', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm }
 
 ]
 
@@ -35,12 +34,13 @@ const SliderProjects = () => {
                 prevEl: '.button-prev-slide'
             }}
             pagination={{ clickable: true }}
+            speed={700}
         >
             {dataSwiper.map((item, index) => (
-                <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0'>
+                <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0 slider'>
                     <div className='swiperSlideText flex items-center flex-row sm:flex-col md:flex-col justify-center'>
                         <div className='w-full mx-auto flex flex-col items-center justify-center space-y-0 sm:space-y-0 md:space-y-20 lg:space-y-20 xl:space-y-20 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:mt-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0' >
-                            <h1 className='text-black text-4xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurme '>{item.titulo}</h1>
+                            <h1 className='text-black text-4xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurme mt-24'>{item.titulo}</h1>
                             <p className='text-black text-center font-light fuenteCentury '>{item.description}</p>
                             <h5 className='text-black text-center font-bold fuenteCentury text-lg'>Tecnologías</h5>
                             <div className='flex flex-grow justify-center gap-8'>

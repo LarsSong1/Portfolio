@@ -1,0 +1,245 @@
+.heroSection .prices {
+    height: 100vh;
+    padding-top: 2%;
+
+}
+
+.heroSection .card {
+    height: 60vh;
+}
+
+
+.heroSection .card ion-icon {
+    color: var(--color-morado);
+
+}
+
+.heroSection .card-middle {
+    height: 700px;
+    position: relative;
+    bottom: 6vh;
+}
+
+
+
+@media screen and (max-width: 1021px) {
+
+    
+
+    .heroSection2::before,
+    .heroSection2::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        height: 1600px;
+        width: 30%;
+        right: 0;
+        background-color: black;
+        z-index: 10;
+        animation: slideWidth 1s ease-in-out forwards;
+    }
+
+
+    .heroSection .prices {
+        margin-top: 10%;
+        height: 1500px;
+
+    }
+
+    .heroSection .card {
+        height: 45vh;
+        width: 75%;
+    }
+
+    .heroSection .card-middle {
+        height: 50vh;
+        position: relative;
+        bottom: 0;
+    }
+
+
+
+}
+
+
+
+/* Sección Presentacion Alejandro */
+.heroSection .presentation {
+    height: 100vh;
+   
+}
+
+
+
+
+
+
+
+.heroSection figure {
+    padding: 0;
+}
+
+
+.heroSection .presentation .card {
+    height: 45vh;
+
+}
+
+
+.heroSection .presentation .content-card {
+    width: 70%;
+    background-color: black;
+    height: 100vh;
+    animation: slideContentCard 1s ease-in-out forwards;
+}
+
+
+.heroSection .presentation .enlace {
+    background-color: var(--color-blanco);
+    width: 30%;
+    height: 100vh;
+    animation: slideEnlace 1s ease-in-out forwards;
+}
+
+.heroSection .presentation .first-acro,
+.heroSection .presentation .second-acro {
+    font-size: 13em;
+}
+
+
+.heroSection .presentation .second-acro {
+    animation: secondAcro 2s  ease-in-out forwards;
+}
+
+
+.slideLar, .slideSon {
+    position: absolute;
+    transform: translateX(-400%);
+    animation: slideHeaders 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+
+.slideLar {
+    padding-right: 15%;
+}
+
+.slideSon {
+    padding-left: 17%;
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .heroSection .presentation .first-acro,
+.heroSection .presentation .second-acro {
+    font-size: 8em;
+}
+
+
+}
+
+
+@media screen and (max-width: 1150px){
+    .presentation .card{
+        width: 300px;   
+       
+    }
+
+    .presentation .redesSociales {
+        width: 300px;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 990px){
+    @keyframes slideContentCard {
+        from {
+            width: 70%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+
+
+
+    @keyframes slideEnlace {
+        from {
+            width: 30%;
+        }
+
+        to {
+            width: 0%;
+        }
+    }
+
+    .presentation .card {
+        margin: auto;
+        margin-bottom: 0;
+    }
+
+    @keyframes secondAcro {
+        from {
+            margin-left: 0;
+        }
+        to{
+            margin-left: -100%;
+        }
+        
+    }
+
+
+    @keyframes slideHeaders {
+        from {
+            transform: translateX(-400%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0%);
+            opacity: 1;
+        }
+        
+    }
+    .presentation .card{
+       margin-top: 15%;   
+       
+    }
+
+    .presentation .content-card{
+        padding-bottom: 15%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .slideLar, .slideSon {
+        font-size: 20px;
+       
+    }
+    
+    .slideLar {
+        padding-right: 18%;
+    }
+    
+    .slideSon {
+        padding-left: 20%;
+        margin-bottom: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 460px){
+    .slideLar {
+        padding-right: 30%;
+    }
+    
+    .slideSon {
+        padding-left: 20%;
+        margin-bottom: 100px;
+    }
+}

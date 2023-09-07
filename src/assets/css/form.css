@@ -1,0 +1,37 @@
+.formSection {
+    width: 100vw;
+}
+
+.formSection .faq {
+    width: 600px;
+
+    height: 600px;
+}
+
+
+.formSection .data {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 600px;
+    
+}
+
+
+.formSection .formularioPlan input:focus {
+    border: 5px solid transparent;
+    outline: 0;
+   
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .formSection .faq, .formSection .data {
+        width: 350px;
+        height: 400px;
+        
+    }
+    
+}

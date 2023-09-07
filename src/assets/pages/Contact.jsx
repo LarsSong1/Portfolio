@@ -3,8 +3,12 @@ import avatar from '../img/avatar.svg'
 import whatsapp from '../img/whatsapp.svg'
 import linkedin from '../img/linkedin.svg'
 import telegram from '../img/telegram.svg'
+import { Link } from 'react-router-dom'
+
+
 
 function Contact() {
+  
   return (
     <main className="heroSection heroSection2">
       <section className="grid z-20 relative prices place-items-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-10 mt-20 xl:mt-0">
@@ -14,7 +18,7 @@ function Contact() {
         <div className="card w-4/4 bg-white shadow-xl">
           <div className="card-body items-center justify-between text-center text-black">
             <ul className='text-left'>
-              <h2 className="fuenteHurme font-light text-center text-4xl pb-5">Básico</h2>
+              <h2 className="fuenteHurme font-light text-center text-4xl pb-5" id='plan1'>Básico</h2>
               <h1 className='text-center bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pb-5'>$40-70</h1>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -38,7 +42,7 @@ function Contact() {
               </li>
             </ul>
             <div className="card-actions w-full">
-              <button className="btn btn-primary w-full fuenteCentury">Adquirir</button>
+              <Link to={`/formcontact/Básico`} className="btn btn-primary w-full fuenteCentury" >Adquirir</Link>
             </div>
           </div>
         </div>
@@ -69,7 +73,7 @@ function Contact() {
               </li>
             </ul>
             <div className="card-actions w-full">
-              <button className="btn btn-primary w-full fuenteCentury">Adquirir</button>
+              <Link to='/formcontact/Personalizado' className="btn btn-primary w-full fuenteCentury">Adquirir</Link>
             </div>
           </div>
         </div>
@@ -77,10 +81,10 @@ function Contact() {
           <div className="card-body items-center justify-between text-center text-black">
             <ul className='text-left'>
               <h2 className="fuenteHurme font-light text-center text-4xl pb-5">Avanzado</h2>
-              <h1 className='text-center bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pb-5'>$700-1200</h1>
+              <h1 className='text-center bg-clip-text text-2xl sm:text-2xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pb-5'>$700-1200</h1>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
-                <p className='ps-4 text-base sm:text-base md:text-md lg:text-lg xl:text-lg'>Todo lo incluido en el plan basico</p>
+                <p className='ps-4 text-base sm:text-base md:text-md lg:text-lg xl:text-xl'>Todo lo incluido en el plan basico</p>
               </li>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -100,7 +104,7 @@ function Contact() {
               </li>
             </ul>
             <div className="card-actions w-full">
-              <button className="btn btn-primary w-full fuenteCentury">Adquirir</button>
+              <Link to='/formcontact/Avanzado' className="btn btn-primary w-full fuenteCentury">Adquirir</Link>
             </div>
           </div>
         </div>
@@ -125,7 +129,7 @@ function Contact() {
           <h1 className='absolute second-acro text-transparent z-20 bg-clip-text text-9xl bg-gradient-to-r from-violet-700 fuenteHurme to-indigo-400 left-0'>Son</h1>
           <div className='mx-auto flex me-40  w-96 justify-between redesSociales'>
             <a href='' className='bg-violet-50 rounded-lg w-20 h-16 flex justify-center  mt-5'>
-              <img className='mx-auto' src={linkedin} alt="linkedin-contact" />
+              <img className='mx-auto' src={linkedin} alt="linkedin-contact" loading='lazy' />
             </a>
             <a href='' className='bg-violet-50 w-20 rounded-lg h-16 flex justify-center mt-5'>
               <img className='mx-auto' src={telegram} alt="telegram-contact" />

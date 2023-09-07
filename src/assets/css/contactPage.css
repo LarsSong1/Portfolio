@@ -31,7 +31,7 @@
         content: '';
         position: absolute;
         top: 0;
-        height: 1600px;
+        height: 2100px;
         width: 30%;
         right: 0;
         background-color: black;
@@ -42,13 +42,14 @@
 
     .heroSection .prices {
         margin-top: 10%;
-        height: 1500px;
+        height: 2000px;
 
     }
 
     .heroSection .card {
-        height: 45vh;
+        height: 500px;
         width: 75%;
+        min-height: 550px;
     }
 
     .heroSection .card-middle {

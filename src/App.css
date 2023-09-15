@@ -6,16 +6,42 @@
 
 
 
+@font-face {
+  font-family: 'Hurme Geometric';
+  src: url('./assets/fonts/HurmeGeometricSans1_Bold.otf');
+}
+
+
+
+@font-face {
+  font-family: 'Hurme Geometric Thin';
+  src: url('./assets/fonts/HurmeGeometricSans1_Light.otf');
+}
+
+
+
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url('./assets/fonts/GOTHIC.TTF');
+}
+
 
 
 .fuenteHurme {
-  font-family: 'Hurme Geometric Sans 1', sans-serif;
+  font-family: 'Hurme Geometric';
   font-weight: bold;
-  
 }
 
+
+.fuenteHurmeThin {
+  font-family: 'Hurme Geometric Thin';
+ 
+}
+
+
 .fuenteCentury {
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Century Gothic';
   font-weight: 400;
   
 }

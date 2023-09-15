@@ -17,8 +17,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const dataSwiper = [
-    { titulo: 'TourByEcu', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at quam in dolor efficitur feugiat. Integer tempor ante urna, eu sollicitudin dolor consectetur sit amet. Morbi sed nisi ut', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu },
-    { titulo: 'Tyres&M', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at quam in dolor efficitur feugiat. Integer tempor ante urna, eu sollicitudin dolor consectetur sit amet. Morbi sed nisi ut', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm }
+    { titulo: 'Tyres&M', description: 'El presente proyecto fue creado para un negocio de venta de llantas y reencauche que cuenta con un sistema de contacto cliente-vendedor donde se puede visualizar todos los productos que ofrece el vendedor', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm },
+    { titulo: 'TourByEcu', description: 'Este proyecto es una practica de una tendencia Web conocida como glashmorphismo la cual le da un toque de elegancia al sitio.', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu },
+   
 
 ]
 
@@ -34,13 +35,13 @@ const SliderProjects = () => {
                 prevEl: '.button-prev-slide'
             }}
             pagination={{ clickable: true }}
-            speed={700}
+            speed={800}
         >
             {dataSwiper.map((item, index) => (
                 <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0 slider'>
                     <div className='swiperSlideText flex items-center flex-row sm:flex-col md:flex-col justify-center'>
                         <div className='w-full mx-auto flex flex-col items-center justify-center space-y-0 sm:space-y-0 md:space-y-20 lg:space-y-20 xl:space-y-20 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:mt-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0' >
-                            <h1 className='text-black text-4xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurme mt-24'>{item.titulo}</h1>
+                            <h1 className='text-black text-4xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurmeThin mt-24'>{item.titulo}</h1>
                             <p className='text-black text-center font-light fuenteCentury '>{item.description}</p>
                             <h5 className='text-black text-center font-bold fuenteCentury text-lg'>Tecnologías</h5>
                             <div className='flex flex-grow justify-center gap-8'>

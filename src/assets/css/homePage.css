@@ -193,6 +193,7 @@
 .swiperSlideSection .swiperSlideImage {
     width: 60vw;
     height: 70vh;
+    
 }
 
 .sliderSection .swiper-pagination {
@@ -238,6 +239,24 @@
 
 .sliderSection .swiper-pagination-bullet-active{
     background: linear-gradient(180deg, #A48BD1 0%, #000 100%);
+}
+
+
+.sliderSection .projectButtons {
+   width: 70%;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.sliderSection .projectButtons .card {
+    height: 100px;
+    min-height: 100px;
+   
+}
+
+.sliderSection .contenedorImage:hover .projectButtons {
+    opacity: 1;
+    
 }
 
 

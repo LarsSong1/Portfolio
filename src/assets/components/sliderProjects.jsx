@@ -17,9 +17,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const dataSwiper = [
-    { titulo: 'Tyres&M', description: 'El presente proyecto fue creado para un negocio de venta de llantas y reencauche que cuenta con un sistema de contacto cliente-vendedor donde se puede visualizar todos los productos que ofrece el vendedor', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm },
-    { titulo: 'TourByEcu', description: 'Este proyecto es una practica de una tendencia Web conocida como glashmorphismo la cual le da un toque de elegancia al sitio.', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu },
-   
+    { titulo: 'Tyres&M', description: 'El presente proyecto fue creado para un negocio de venta de llantas y reencauche que cuenta con un sistema de contacto cliente-vendedor donde se puede visualizar todos los productos que ofrece el vendedor', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm, web: 'https://tyres-m.netlify.app/', github: 'https://github.com/LarsSong1/tyres-M.git'},
+    { titulo: 'TourByEcu', description: 'Este proyecto es una practica de una tendencia Web conocida como glashmorphismo la cual le da un toque de elegancia al sitio.', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu, web:'https://chimborazo-tour.netlify.app/', github: 'https://github.com/LarsSong1/Chimborazo-tour.git' },
+
 
 ]
 
@@ -53,7 +53,27 @@ const SliderProjects = () => {
                         </div>
                     </div>
                     <div className='bg-black relative flex justify-center items-center swiperSlideImage top-0 z-10 sm:flex-col'>
-                        <img src={item.image} alt="Demostración Portfolio" loading='lazy' className='p-20' />
+                        <div className='flex items-center justify-center contenedorImage'>
+                            <div className="flex w-full absolute projectButtons">
+                                <div className="grid flex-grow card rounded-lg bg-white place-items-center">
+                                    <a href={item.web} rel='noreferrer' target='_blank'>
+                                        <span className='text-6xl'>
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div className="divider text-white font-bold fuenteHurme lg:divider-horizontal">OR</div>
+                                <div className="grid flex-grow card bg-white rounded-lg place-items-center">
+                                    <a href={item.github} rel='noreferrer' target='_blank'>
+                                        <span className='text-6xl'>
+                                            <ion-icon name="logo-github"></ion-icon>
+
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src={item.image} alt="Demostración Portfolio" loading='lazy' className='p-4 sm:p-4 md:p-10 lg:p-20 xl:p-20' />
+                        </div>
                         <div className='absolute flex  bottom-5 z-50 sm:bottom-20 lg:left-0 xl:left-0 lg:-bottom-20 xl:-bottom-20 '>
                             <div className='button-prev-slide'>
                                 <ion-icon name="arrow-back-circle-outline"></ion-icon>

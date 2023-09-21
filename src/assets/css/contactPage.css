@@ -5,7 +5,9 @@
 }
 
 .heroSection .card {
-    height: 60vh;
+    height: 600px;
+    overflow: hidden;
+    
 }
 
 
@@ -47,7 +49,7 @@
     }
 
     .heroSection .card {
-        height: 500px;
+        height: 400px;
         width: 75%;
         min-height: 550px;
     }
@@ -82,7 +84,8 @@
 
 
 .heroSection .presentation .card {
-    height: 45vh;
+    height: 500px;
+    min-height: 400px;
 
 }
 
@@ -165,7 +168,9 @@
         }
     }
 
-
+    .enlace {
+        display: none;
+    }
 
 
     @keyframes slideEnlace {

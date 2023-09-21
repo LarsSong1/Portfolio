@@ -128,19 +128,19 @@ function Contact() {
           </div>
           <h1 className='absolute second-acro text-transparent z-20 bg-clip-text text-9xl bg-gradient-to-r from-violet-700 fuenteHurme to-indigo-400 left-0'>Son</h1>
           <div className='mx-auto flex me-40  w-96 justify-between redesSociales'>
-            <a href='' className='bg-violet-50 rounded-lg w-20 h-16 flex justify-center  mt-5'>
+            <a href='https://www.linkedin.com/in/larsong/' rel='noreferrer' className='bg-violet-50 rounded-lg w-20 h-16 flex justify-center  mt-5'>
               <img className='mx-auto' src={linkedin} alt="linkedin-contact" loading='lazy' />
             </a>
-            <a href='' className='bg-violet-50 w-20 rounded-lg h-16 flex justify-center mt-5'>
+            <a href='https://t.me/LarsSong' rel='noreferrer' className='bg-violet-50 w-20 rounded-lg h-16 flex justify-center mt-5'>
               <img className='mx-auto' src={telegram} alt="telegram-contact" />
             </a>
-            <a href='' className='bg-violet-50 w-20 rounded-lg h-16 flex justify-center mt-5'>
+            <a href='https://wa.me/593967185460?text= Hola amigo, necesito información sobre tus servicios de creación de paginas webs' className='bg-violet-50 w-20 rounded-lg h-16 flex justify-center mt-5'>
               <img className='mx-auto' src={whatsapp} alt="whatsapp-contact" />
             </a>
           </div>
         </div>
         <div className='enlace relative'>
-          <a href="" className='text-black absolute bottom-10 left-10 text-2xl fuenteHurme font-light flex items-center w-full'>
+          <a href="" className='text-black absolute bottom-10 left-10 text-2xl fuenteHurmeThin font-light flex items-center w-full'>
             <p className='pe-5'>Consulta Personal</p>
             <ion-icon name="arrow-forward-outline"></ion-icon>
           </a>

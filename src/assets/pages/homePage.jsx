@@ -41,7 +41,7 @@ const HomePage = () => {
                 <h2 className='relative bottom-10
                 md:-translate-x-40 md:w-80 w-80 xl:w-full lg:w-60 sm:w-full 
                 translate-x-0 sm:translate-x-0
-                text-xl font-light fuenteHurme sm:relative md:absolute lg:absolute xl:absolute text-center sm:mt-20 z-40 text-blendBottom sm:mb-10 md:mb-20 mb-20 lg:mb-20 xl:mb-0 '>Convierte tu presencia en línea en algo impresionante con mi diseño web personalizado</h2>
+                text-xl font-light fuenteCentury sm:relative md:absolute lg:absolute xl:absolute text-center sm:mt-20 z-40 text-blendBottom sm:mb-10 md:mb-20 mb-20 lg:mb-20 xl:mb-0 '>Convierte tu presencia en línea en algo impresionante con mi diseño web personalizado</h2>
                 <a href='#proyectos' className="btn btn-xs sm:btn-md md:btn-md lg:btn-lg relative z-40 right-0   bg-gradient-to-tl from-black via-violet-900 to-slate-300 text-white  bottom-10 fuenteHurmeThin font-normal sm:relative md:absolute lg:absolute xl:absolute xl:right-40 lg:right-40">Proyectos</a>
             </section>
             <section className='designWeb relative flex sm:flex-col md:flex-row lg:flex-row xl:flex-row flex-col'>

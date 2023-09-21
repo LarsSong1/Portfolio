@@ -6,12 +6,15 @@ function FormStructure({ segundaP, terceraP, cuartaP }) {
     const {plan} = useParams()
     return (
         <main className="formSection relative">
-            <h1 className="bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pt-14 text-center">Hagamos <br /> Realidad tu idea</h1>
+            <h1 className="bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pt-20 text-center titulo">Hagamos <br /> Realidad tu idea</h1>
+            <div className="box-skew">
+
+            </div>
             <section className="grid place-items-center xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
 
-                <div className='faq mt-10'>
+                <div className='faq mt-10 p-10'>
                     <h3 className='text-black text-3xl font-bold fuenteHurme'>Preguntas Frecuentes</h3>
-                    <h4 className='text-black text-xl font-thin fuenteHurme'>Preguntas que por lo general me hace la gente</h4>
+                    <h4 className='text-black text-xl font-thin fuenteHurmeThin'>Preguntas que por lo general me hace la gente</h4>
                     <div className="collapse bg-base-200 mt-10 rounded-sm shadow-md">
                         <input type="checkbox" className="peer" />
                         <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black">
@@ -50,11 +53,11 @@ function FormStructure({ segundaP, terceraP, cuartaP }) {
                     </div>
                 </div>
 
-                <div className='data mt-10'>
+                <div className='data mt-10 p-10'>
                     <h3 className='text-black text-3xl font-bold fuenteHurme'>Información de Perfil</h3>
-                    <h4 className='text-black text-xl font-thin fuenteHurme'>LLena los campos dependiendo de quien eres para ponerme en contacto contigo</h4>
+                    <h4 className='text-black text-xl font-thin fuenteHurmeThin'>LLena los campos dependiendo de quien eres para ponerme en contacto contigo</h4>
                     <h3 className='text-black text-2xl font-bold fuenteHurme mt-2'>Datos personales</h3>
-                    <h5 className="text-black text-lg font-thin fuenteHurme">Estos datos serán usados como medio de contacto para el desarrollador </h5>
+                    <h5 className="text-black text-lg font-thin fuenteHurmeThin">Estos datos serán usados como medio de contacto para el desarrollador </h5>
                     <form action="" className="mt-5 formularioPlan">
                         <div className="flex border-b-2 border-opacity-20 border-black w-96 h-10 items-center hover:border-opacity-60">
 
@@ -93,7 +96,7 @@ function FormStructure({ segundaP, terceraP, cuartaP }) {
 
                 </div>
 
-
+                
             </section>
         </main>
     )

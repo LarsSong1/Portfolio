@@ -36,11 +36,14 @@
 }
 
 
-.formSection .formularioPlan input:focus {
+.formSection .formularioPlan input:focus, .formSection .formularioPlan textarea:focus {
     border: 5px solid transparent;
     outline: 0;
    
 }
+
+
+
 
 
 

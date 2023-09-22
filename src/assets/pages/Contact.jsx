@@ -42,7 +42,7 @@ function Contact() {
               </li>
             </ul>
             <div className="card-actions w-full">
-              <Link to={`/formcontact/Básico`} className="btn btn-primary w-full fuenteCentury" >Adquirir</Link>
+              <Link to={`/formcontact/Básico`} className="btn btn-primary w-full fuenteCentury" >Consultar</Link>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ function Contact() {
               </li>
             </ul>
             <div className="card-actions w-full">
-              <Link to='/formcontact/Personalizado' className="btn btn-primary w-full fuenteCentury">Adquirir</Link>
+              <Link to='/formcontact/Personalizado' className="btn btn-primary w-full fuenteCentury">Consultar</Link>
             </div>
           </div>
         </div>
@@ -104,15 +104,14 @@ function Contact() {
               </li>
             </ul>
             <div className="card-actions w-full">
-              <Link to='/formcontact/Avanzado' className="btn btn-primary w-full fuenteCentury">Adquirir</Link>
+              <Link to='/formcontact/Avanzado' className="btn btn-primary w-full fuenteCentury">Consultar</Link>
             </div>
           </div>
         </div>
 
 
       </section>
-      <section className='presentation relative flex items-center justify-end flex-row-reverse'>
-        
+      <section className='presentation relative flex items-center justify-end flex-row-reverse'>  
         <div className='relative content-card flex items-end justify-center  flex-col '>
           <h1 className='text-white mx-auto top-32 relative fuenteHurme text-6xl lg:text-8xl xl:text-8xl slideLar'>Lar</h1>
           <h1 className='mx-auto top-20 relative bg-gradient-to-r from-violet-700 fuenteHurme to-indigo-400 bg-clip-text text-transparent text-6xl lg:text-8xl xl:text-8xl slideSon'>Son</h1>

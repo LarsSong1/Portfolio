@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 import reactLogo from '../img/react2.svg'
 import html from '../img/html.svg'
 import css from '../img/css.svg'
@@ -29,13 +29,18 @@ const SliderProjects = () => {
         <Swiper className='sliderSection mx-auto'
             spaceBetween={50}
             slidesPerView={1}
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             navigation={{
                 nextEl: '.button-next-slide',
                 prevEl: '.button-prev-slide'
             }}
-            pagination={{ clickable: true }}
+            
+            pagination={{ clickable: true  }}
             speed={800}
+            autoplay= {{
+                delay: 4000
+            }}
+          
         >
             {dataSwiper.map((item, index) => (
                 <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0 slider'>
@@ -55,28 +60,26 @@ const SliderProjects = () => {
                     <div className='bg-black relative flex justify-center items-center swiperSlideImage top-0 z-10 sm:flex-col'>
                         <div className='flex items-center justify-center contenedorImage'>
                             <div className="flex w-full absolute projectButtons">
-                                <div className="grid flex-grow card rounded-lg bg-white place-items-center">
-                                    <a href={item.web} rel='noreferrer' target='_blank'>
+                                <a href={item.web} rel='noreferrer' target='_blank' className="grid flex-grow card rounded-lg bg-white place-items-center">
+                                    
                                         <span className='text-6xl'>
                                             <ion-icon name="eye-outline"></ion-icon>
                                         </span>
-                                    </a>
-                                </div>
+                                    
+                                </a>
                                 <div className="divider text-white font-bold fuenteHurme lg:divider-horizontal">OR</div>
-                                <div className="grid flex-grow card bg-white rounded-lg place-items-center">
-                                    <a href={item.github} rel='noreferrer' target='_blank'>
+                                <a  href={item.github} rel='noreferrer' target='_blank' className="grid flex-grow card bg-white rounded-lg place-items-center">
                                         <span className='text-6xl'>
                                             <ion-icon name="logo-github"></ion-icon>
 
                                         </span>
-                                    </a>
-                                </div>
+                                </a>
                             </div>
                             <img src={item.image} alt="Demostración Portfolio" loading='lazy' className='p-4 sm:p-4 md:p-10 lg:p-20 xl:p-20' />
                         </div>
-                        <div className='absolute flex  bottom-5 z-50 sm:bottom-20 lg:left-0 xl:left-0 lg:-bottom-20 xl:-bottom-20 '>
+                        <div className='absolute flex mx-auto bottom-5 gap-10 z-50 sm:bottom-20 lg:-bottom-20 xl:-bottom-20 '>
                             <div className='button-prev-slide'>
-                                <ion-icon name="arrow-back-circle-outline"></ion-icon>
+                                <ion-icon name="arrow-back-circle-outline"></ion-icon>  
                             </div>
                             <div className='button-next-slide '>
                                 <ion-icon name="arrow-forward-circle-outline"></ion-icon>

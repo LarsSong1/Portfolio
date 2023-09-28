@@ -4,6 +4,10 @@
 
 }
 
+.titulo-planes hr {
+    opacity: 0;
+} 
+
 .heroSection .card {
     height: 600px;
     overflow: hidden;

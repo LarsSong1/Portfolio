@@ -13,7 +13,7 @@ function Contact() {
     <main className="heroSection heroSection2">
       <section className="grid z-20 relative prices place-items-center grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-10 mt-20 xl:mt-0">
         <div className='lg:col-span-3 xl:col-span-3'>
-          <h1 className=' text-blendGradient text-center bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black '>Planes a tu <hr /> Medida</h1>
+          <h1 className=' text-blendGradient text-center bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black titulo-planes  '>Planes a tu <hr /> Medida</h1>
         </div>
         <div className="card w-4/4 bg-white shadow-xl">
           <div className="card-body items-center justify-between text-center text-black">

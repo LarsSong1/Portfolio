@@ -106,7 +106,7 @@
 
 .designWeb .white-box {
     background-color: var(--color-blanco);
-    width: 30%;
+   
 
 }
 
@@ -124,14 +124,14 @@
     background: url('../img/avatar.png') rgb(16, 16, 16) 80%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 40%;
+  
 }
 
 
 
 .designWeb .dark-box {
     background-color: black;
-    width: 30%;
+  
 
 }
 
@@ -141,6 +141,14 @@
     font-size: 20px;
 
 }
+
+/* @media screen and (max-width: 1040px){
+    .white-box .mini-box {
+        position: relative;
+        top: 0;
+        
+    }
+} */
 
 
 @media screen and (max-width: 760px) {
@@ -152,9 +160,7 @@
 
 
 
-    .designWeb .middle-box {
-        display: none;
-    }
+    
 
  
 
@@ -196,10 +202,10 @@
     
 }
 
-.sliderSection .swiper-pagination {
+ /* .sliderSection .swiper-pagination {
     position: absolute;
     bottom: 10px;
-    /* Ajusta la distancia desde la parte inferior según tu diseño */
+ 
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -207,18 +213,16 @@
     transform: translateX(10%);
     max-width: 5vw;
     align-items: center;
+}  */
 
-
-}
-
-.sliderSection .swiper-pagination::before {
+/* .sliderSection .swiper-pagination::before {
     content: '';
     position: absolute;
     background-color: #000;
     width: 1px;
     height: 80%;
     z-index: 1;
-}
+} */
 
 
 .button-prev-slide ion-icon, .button-next-slide ion-icon{
@@ -228,7 +232,7 @@
 }
 
 
-.sliderSection .swiper-pagination-bullet {
+/* .sliderSection .swiper-pagination-bullet {
     background-color: var(--color-morado);
     height: 20px;
     width: 20px;
@@ -239,7 +243,7 @@
 
 .sliderSection .swiper-pagination-bullet-active{
     background: linear-gradient(180deg, #A48BD1 0%, #000 100%);
-}
+} */
 
 
 .sliderSection .projectButtons {

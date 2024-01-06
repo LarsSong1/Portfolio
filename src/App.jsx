@@ -14,10 +14,11 @@ function App() {
       <BrowserRouter>
       <Navbar/>
         <Routes>
-          <Route path='/' element={<HomePage/>}/>
+          <Route path='/'  element={<HomePage/>}/>
           <Route path='/contact' element={<Contact/>} />
           <Route path='/formcontact' element={<Form/>}/>
           <Route path='/formcontact/:plan' element={<Form/>}/>
+          <Route path='*' element={<HomePage/>}/>
         </Routes>
       
       </BrowserRouter>

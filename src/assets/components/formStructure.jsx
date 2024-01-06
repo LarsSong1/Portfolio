@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser'
 import { useParams } from "react-router-dom"
 import { Toaster, toast } from 'sonner'
 
-function FormStructure({ segundaP, terceraP, cuartaP, Pdf }) {
+function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cuartaRes, Pdf }) {
    
     const { plan } = useParams()
     const formulario = useRef();
@@ -60,7 +60,7 @@ function FormStructure({ segundaP, terceraP, cuartaP, Pdf }) {
                             ¿Deberiamos hacer un contrato?
                         </div>
                         <div className="collapse-content bg-white text-black">
-                            <p>En la medida de lo posible si, más que todo acordar en un pdf el trato realizado con el fin de evitar fraude.</p>
+                            <p>En la medida de lo posible acordar un deposito del 25% o 50% del costo final del proyecto, si en tal caso no se concreta el proyecto pues se le devolvera el 95% del deposito</p>
                         </div>
                     </div>
                     <div className="collapse bg-base-200 rounded-sm shadow-md">
@@ -69,7 +69,7 @@ function FormStructure({ segundaP, terceraP, cuartaP, Pdf }) {
                             {segundaP}
                         </div>
                         <div className="collapse-content bg-white text-black">
-                            <p>En la medida de lo posible si, más que todo acordar en un pdf el trato realizado con el fin de evitar fraude.</p>
+                            <p>{segundaRes}</p>
                         </div>
                     </div>
                     <div className="collapse bg-base-200 rounded-sm shadow-md">
@@ -78,7 +78,7 @@ function FormStructure({ segundaP, terceraP, cuartaP, Pdf }) {
                             {terceraP}
                         </div>
                         <div className="collapse-content bg-white text-black">
-                            <p>En la medida de lo posible si, más que todo acordar en un pdf el trato realizado con el fin de evitar fraude.</p>
+                            <p>{terceraRes}</p>
                         </div>
                     </div>
                     <div className="collapse bg-base-200 rounded-sm shadow-md">
@@ -87,7 +87,7 @@ function FormStructure({ segundaP, terceraP, cuartaP, Pdf }) {
                             {cuartaP}
                         </div>
                         <div className="collapse-content bg-white text-black">
-                            <p>En la medida de lo posible si, más que todo acordar en un pdf el trato realizado con el fin de evitar fraude.</p>
+                            <p>{cuartaRes}</p>
                         </div>
                     </div>
                 </div>

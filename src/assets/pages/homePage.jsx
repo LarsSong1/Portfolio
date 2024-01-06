@@ -1,23 +1,26 @@
 
 import '../css/homePage.css'
-import cerebro from '../img/cerebro.svg'
+import cerebro from '../img/cerebro.webp'
 import react from '../img/react.svg'
 import django from '../img/django.svg'
 import SliderProjects from '../components/sliderProjects'
+import flet from '../img/flet.svg'
+import figma from '../img/figma.svg'
+import rn from '../img/reactnative.svg'
 
 
 const HomePage = () => {
     return (
         <main className='heroSection'>
             <section className='container justify-around items-center flex mx-auto flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row sm:justify-center'>
-                <div className='text-center me-0 lg:me-10 xl:me-20 md:mb-0 lg:mb-0 xl:mb-0 z-40 sm:text-center md:text-end lg:text-end xl:text-end sm:me-0  md:me-0 mt-10 sm:mt-10 md:mt-0 lg:mt-0 xl:mt-0 sm:mb-20'>
+                <div className='text-center lg:ms-10 xl:ms-320 md:mb-0 lg:mb-0 xl:mb-0 z-40 sm:text-center md:text-end lg:text-end xl:text-end  mt-10 sm:mt-10 md:mt-0 lg:mt-0 xl:mt-0 sm:mb-20 '>
                     <h3 className='text-blend font-normal text-xl sm:text-lg md:text-2xl lg:-text-4xl xl:text-4xl mb-4 fuenteHurmeThin z-20'>Hola soy Larson</h3>
-                    <h1 className={`text-blendGradient bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black `}>Diseñador & <br /> Desarrollador Web</h1>
+                    <h1 className={`text-blendGradient bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black whitespace-nowrap`}>Diseñador & <br /> Desarrollador Web</h1>
                     <h4 className='bg-gradient-to-b text-transparent from-green-700 to-black  mt-4 font-semibold fuenteCentury text-blendGradient bg-clip-text'>+593 96 7185 460</h4>
                     <h4 className='bg-gradient-to-b text-transparent from-green-700 to-black fuenteCentury font-semibold text-blendGradient bg-clip-text'>damianalejandrofirst@gmail.com</h4>
                 </div>
                 <div>
-                    <img className='z-20 rounded-lg w-1/3 sm:w-1/3 md:w-2/3 lg:w-10/12 xl:w-11/12 mx-auto ' src={cerebro} alt="Cerebro-Inteligencia" />
+                    <img className='z-20 rounded-lg w-1/3 sm:w-1/3 md:w-2/3 lg:w-6/12 xl:w-8/12 mx-auto  ' src={cerebro} alt="Cerebro-Inteligencia" />
                 </div>
                 <ul className='absolute left-20 mt-auto mb-auto icons md:relative z-30 md:left-5 lg:absolute xl:absolute xl:left-10 lg:xl-20 sm:left-7 sm:absolute'>
                     <li>
@@ -72,12 +75,12 @@ const HomePage = () => {
                 <div className='dark-box flex flex-col items-center relative'>
                     <div className='w-auto relative xl:ps-20 pe-10 ps-10 top-20 md:ps-10 md:pe-10 xl:pe-20 sm:top-20 md:top-40 lg:top-40 xl:top-40'>
                         <h5 className='font-extrabold text-left mb-5 text-white'>Web</h5>
-                        <p className='text-justify mb-5 text-white'>He trabajado con diversas tecnologias y lenguajes de programación. en particular tengo experiencia en el uso de React y Django para el desarrollo de aplicaciones webs modernas y escalables</p>
+                        <p className='text-justify mb-5 text-white'>He trabajado con diversas tecnologias y lenguajes de programación. En particular tengo experiencia en el uso de React y Django para el desarrollo de aplicaciones webs modernas y escalables</p>
                         <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
                             <img src={django} alt="Django Logo" />
                             <div className='ps-5'>
                                 <h5 className='font-extrabold text-white'>django</h5>
-                                <p className='text-white opacity-80'>Back-End</p>
+                                <p className='text-white opacity-80'>Aplicaciones Webs</p>
                             </div>
                         </div>
                         <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
@@ -87,6 +90,28 @@ const HomePage = () => {
                                 <p className='text-white opacity-80'>Front-End</p>
                             </div>
                         </div>
+                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
+                            <img src={rn} alt="React Logo" />
+                            <div className='ps-5'>
+                                <h1 className='font-extrabold text-white'>React Native</h1>
+                                <p className='text-white opacity-80'>Aplicaciones Móviles</p>
+                            </div>
+                        </div>
+                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
+                            <img src={flet} alt="React Logo" />
+                            <div className='ps-5'>
+                                <h1 className='font-extrabold text-white'>Flet</h1>
+                                <p className='text-white opacity-80'>Aplicaciones Móviles</p>
+                            </div>
+                        </div>
+                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
+                            <img src={figma} alt="React Logo" />
+                            <div className='ps-5'>
+                                <h1 className='font-extrabold text-white'>Figma</h1>
+                                <p className='text-white opacity-80'>Diseño de interfaces <br /> Móviles y Webs</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 

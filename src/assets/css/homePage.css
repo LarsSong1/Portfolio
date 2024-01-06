@@ -121,10 +121,12 @@
 }
 
 .designWeb .middle-box {
-    background: url('../img/avatar.png') rgb(16, 16, 16) 80%;
+    background: url('../img/avatar.webp') rgb(16, 16, 16) 80%;
     background-repeat: no-repeat;
     background-size: cover;
   
+
+    
 }
 
 

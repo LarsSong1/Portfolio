@@ -56,7 +56,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
                     <h4 className='text-black text-xl font-thin fuenteHurmeThin'>Preguntas que por lo general me hace la gente</h4>
                     <div className="collapse bg-base-200 mt-10 rounded-sm shadow-md">
                         <input type="checkbox" className="peer" />
-                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black">
+                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black font-bold">
                             ¿Deberiamos hacer un contrato?
                         </div>
                         <div className="collapse-content bg-white text-black">
@@ -65,7 +65,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
                     </div>
                     <div className="collapse bg-base-200 rounded-sm shadow-md">
                         <input type="checkbox" className="peer" />
-                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black">
+                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black font-bold">
                             {segundaP}
                         </div>
                         <div className="collapse-content bg-white text-black">
@@ -74,7 +74,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
                     </div>
                     <div className="collapse bg-base-200 rounded-sm shadow-md">
                         <input type="checkbox" className="peer" />
-                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black">
+                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black font-bold">
                             {terceraP}
                         </div>
                         <div className="collapse-content bg-white text-black">
@@ -83,7 +83,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
                     </div>
                     <div className="collapse bg-base-200 rounded-sm shadow-md">
                         <input type="checkbox" className="peer" />
-                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black">
+                        <div className="collapse-title bg-white text-black peer-checked:bg-white peer-checked:text-black font-bold">
                             {cuartaP}
                         </div>
                         <div className="collapse-content bg-white text-black">
@@ -125,7 +125,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
                         </div>
                         <h6 className="text-black">Puedes descargar información relevante con respecto <br /> al plan que seleccionaste antes de adquirir mis servicios</h6>
                         <div className='grid grid-cols-1'>
-                            <a href={Pdf} className="btn w-52 bg-transparent outline-none border-1 border-opacity-20 mt-5 text-black text-md hover:bg-transparent" onClick={downloadSuccess} download>
+                            <a href={Pdf} className="btn w-52 bg-transparent outline-none border-1 border-opacity-20 mt-5 text-black text-md hover:bg-transparent" onClick={downloadSuccess} download='plan'>
                                 Descargar
                                 <span className="text-black">
                                     <ion-icon name="download-outline"></ion-icon>

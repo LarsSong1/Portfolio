@@ -1,29 +1,33 @@
 import FormStructure from '../components/formStructure'
 import '../css/form.css'
 import { useParams } from 'react-router-dom'
-
+import starterplan from '../../../public/downloads/doc.pdf'
 
 function Form() {
 
 
     const { plan } = useParams()
-    if (plan == 'Básico') { 
+     if (plan == 'starterweb') {
         return (
-            <FormStructure segundaP='¿Qué es una landing Page?' segundaRes={<>
-                Una landing page es una página web individual y altamente enfocada diseñada para convertir visitantes en clientes o leads al presentarles una oferta específica o información relevante. <strong> Ideal para pequeños negocios </strong>
-            </>}
-                terceraP={<>¿Como beneficia a mi negocio tener una landingPage?</>} terceraRes={<>
-                    Una landing page permite a un pequeño negocio dirigir a los visitantes hacia acciones clave, como compras o registros, de manera efectiva y rentable</>}
-                cuartaP={<>¿Porque las landingPage son mas económicas?</>} cuartaRes={<>Una landingPage se enfoca en una acción específica como promocionar un producto, lo que la hace más económica que una página web completa. Esto la convierte en una opción efectiva para campañas de marketing con presupuestos limitados</>}
-                Pdf='../../../public/downloads/Web Design for Beginners - Project Brief.pdf' />
-        )
-    } else if (plan == 'Personalizado') {
-        return (
-            <FormStructure segundaP='¿Qué es un aplicativo web?' Pdf='../../../public/downloads/Web Design for Beginners - Project Brief.pdf' />
-        )
+            <FormStructure segundaP='¿En que consiste este plan?' 
+            segundaRes={'El StarterWeb Package es un plan asequible diseñado para satisfacer las necesidades básicas de pequeños negocios que buscan tener presencia en línea de manera rápida y efectiva. Este plan proporciona una solución simple pero atractiva para aquellos que desean tener una página web funcional sin comprometer su presupuesto'}
+            terceraP={'¿Cuántas páginas incluye el plan StarterWeb?'}
+            terceraRes={'El plan incluye hasta 3 páginas, que generalmente abarcan la página de inicio, servicios/sobre-nosotros, contacto u otras páginas esenciales según tus necesidades'}
+            cuartaP={'¿Qué sucede si necesito más páginas en el futuro?'}
+            cuartaRes={'Podemos discutir opciones para expandir tu sitio web en el futuro, ajustando el plan según tus necesidades cambiantes'}
+            Pdf={starterplan}
+            />
+            )
     } else if (plan == 'Avanzado') {
         return (
-            <FormStructure segundaP='¿Qué es un Página Web?' Pdf='../../../public/downloads/Web Design for Beginners - Project Brief.pdf' />
+            <FormStructure segundaP='¿Hay opciones de capacitación más avanzada para el usuario en este plan?' 
+            segundaRes={'En efecto, se guiará al cliente durante todo el proceso, se le explicará la importancia de cada funcionalidad y mediante estandares de diseño y requerimientos del cliente se le entregará el producto final'}
+            terceraP={'¿Cuántas páginas incluye el plan StarterWeb?'}
+            terceraRes={'Este plan ofrece capacidad hasta para 8 de páginas, 2 adicionales y secciones según tus requisitos'}
+            cuartaP={'¿Cuántas revisiones y modificaciones puedo realizar en el diseño antes de la implementación final?'}
+            Pdf='downloads/doc.pdf' 
+            cuartaRes={'Incluye 3 rondas de revisiones para asegurarnos de que el diseño cumpla con tus expectativas antes de la implementación'}
+            />
         )
     }
 

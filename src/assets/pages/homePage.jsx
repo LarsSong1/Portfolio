@@ -7,9 +7,20 @@ import SliderProjects from '../components/sliderProjects'
 import flet from '../img/flet.svg'
 import figma from '../img/figma.svg'
 import rn from '../img/reactnative.svg'
+import CardSkill from '../components/cardSkill'
+
+
+
+
+
 
 
 const HomePage = () => {
+
+
+
+
+
     return (
         <main className='heroSection'>
             <section className='container justify-around items-center flex mx-auto flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row sm:justify-center'>
@@ -36,7 +47,7 @@ const HomePage = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://wa.me/5930967185460?text= Hola, estoy buscando un desarrollador web para crear un sitio para mi negocio. ¿Puedes ayudarme? o brindarme información por favor, dime cómo podemos conectarnos y discutir más detalles. ¡Gracias!" rel='noreferrer' target='_blank'>
+                        <a href="https://wa.me/5930967470880?text= Hola, estoy buscando un desarrollador web para crear un sitio para mi negocio. ¿Puedes ayudarme? o brindarme información por favor, dime cómo podemos contactarnos y discutir más detalles. ¡Gracias!" rel='noreferrer' target='_blank'>
                             <ion-icon name="logo-whatsapp"></ion-icon>
                         </a>
                     </li>
@@ -76,51 +87,30 @@ const HomePage = () => {
                     <div className='w-auto relative xl:ps-20 pe-10 ps-10 top-20 md:ps-10 md:pe-10 xl:pe-20 sm:top-20 md:top-40 lg:top-40 xl:top-40'>
                         <h5 className='font-extrabold text-left mb-5 text-white'>Web</h5>
                         <p className='text-justify mb-5 text-white'>He trabajado con diversas tecnologias y lenguajes de programación. En particular tengo experiencia en el uso de React y Django para el desarrollo de aplicaciones webs modernas y escalables</p>
-                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
-                            <img src={django} alt="Django Logo" />
-                            <div className='ps-5'>
-                                <h5 className='font-extrabold text-white'>django</h5>
-                                <p className='text-white opacity-80'>Aplicaciones Webs</p>
-                            </div>
-                        </div>
-                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
-                            <img src={react} alt="React Logo" />
-                            <div className='ps-5'>
-                                <h1 className='font-extrabold text-white'>React</h1>
-                                <p className='text-white opacity-80'>Front-End</p>
-                            </div>
-                        </div>
-                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
-                            <img src={rn} alt="React Logo" />
-                            <div className='ps-5'>
-                                <h1 className='font-extrabold text-white'>React Native</h1>
-                                <p className='text-white opacity-80'>Aplicaciones Móviles</p>
-                            </div>
-                        </div>
-                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
-                            <img src={flet} alt="React Logo" />
-                            <div className='ps-5'>
-                                <h1 className='font-extrabold text-white'>Flet</h1>
-                                <p className='text-white opacity-80'>Aplicaciones Móviles</p>
-                            </div>
-                        </div>
-                        <div className='bg-zinc-900 rounded-md flex h-20 justify-start ps-5 items-center mb-5'>
-                            <img src={figma} alt="React Logo" />
-                            <div className='ps-5'>
-                                <h1 className='font-extrabold text-white'>Figma</h1>
-                                <p className='text-white opacity-80'>Diseño de interfaces <br /> Móviles y Webs</p>
-                            </div>
-                        </div>
+
+                        <CardSkill img={django} alt="django-image" skillInfo={"Django"} skillDescription={"Aplicaciones Webs"} />
+
+                        <CardSkill img={react} alt={"react-image"} skillInfo={"React"} skillDescription={"Front-End"} />
+                        <CardSkill img={rn} alt={"react-native-image"} skillInfo={"React Native"} skillDescription={"Aplicaciones Móviles"} />
+                        <CardSkill img={flet} alt={"flet-image"} skillInfo={"Flet"} skillDescription={"Aplicaciones Móviles"} />
+                        <CardSkill img={figma} alt={"figma-image"} skillInfo={"Figma"} skillDescription={<p className='text-white opacity-80'>Diseño de interfaces <br /> Móviles y Webs</p>} />
+                      
+
+                        
+                        
+                        
+                      
 
                     </div>
                 </div>
 
             </section>
             <section className='slideContent' id='proyectos'>
-                <SliderProjects/>
+                <SliderProjects />
             </section>
 
         </main>
+
 
     )
 }

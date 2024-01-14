@@ -9,6 +9,12 @@ import tourByEcu from '../img/tourbyecu.svg'
 import bootstrap from '../img/bootstrap.svg'
 import '../css/homePage.css'
 import tyresm from '../img/tyres_m.svg'
+import flet from '../img/flet.svg'
+import appcalc from '../img/pythonflet.webp'
+import unemeeting from '../img/unemeeting.webp'
+import pocketimage from '../img/pocketbase.svg'
+import react_native from '../img/reactnative.svg'
+import native_base from '../img/nativebase.svg'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -19,6 +25,9 @@ import 'swiper/css/scrollbar';
 const dataSwiper = [
     { titulo: 'Tyres&M', description: 'El presente proyecto fue creado para un negocio de venta de llantas y reencauche que cuenta con un sistema de contacto cliente-vendedor donde se puede visualizar todos los productos que ofrece el vendedor', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm, web: 'https://tyres-m.netlify.app/', github: 'https://github.com/LarsSong1/tyres-M.git'},
     { titulo: 'TourByEcu', description: 'Este proyecto es una practica de una tendencia Web conocida como glashmorphismo la cual le da un toque de elegancia al sitio.', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu, web:'https://chimborazo-tour.netlify.app/', github: 'https://github.com/LarsSong1/Chimborazo-tour.git' },
+    {titulo: 'App móvil', description: 'Esta App móvil esta basada en las distintas fases de dos pseudocódigo que devuelven el calculo del factor de fricción y del diseño de tuberias desarrollada para estudiantes de la universidad UPSE de la peninsula de Santa Elena', tecnologias: [flet], image: appcalc, web: 'https://drive.google.com/file/d/10ee_AqpPGOAU9-77VPBHG08XkPuxIoig/view?usp=sharing', github: 'https://github.com/LarsSong1/calculos-app-flet',},
+    { titulo: 'UneMeeting', description: 'Esta App fue creadada con el proposito de recopilar información referente a conferencias que se llevaban a cabo en una Universidad en un solo sitio, esta aplicacion móvil representa parte de una práctica', tecnologias: [react_native, pocketimage, native_base], image: unemeeting, web: '', github:'https://github.com/LarsSong1/uneMeeting'}
+
 
 
 ]
@@ -43,17 +52,16 @@ const SliderProjects = () => {
           
         >
             {dataSwiper.map((item, index) => (
-                <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0 slider'>
+                <SwiperSlide key={index} className='flex justify-center items-start swiperSlideSection relative flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row mt-0 slider '>
                     <div className='swiperSlideText flex items-center flex-row sm:flex-col md:flex-col justify-center'>
                         <div className='w-full mx-auto flex flex-col items-center justify-center space-y-0 sm:space-y-0 md:space-y-20 lg:space-y-20 xl:space-y-20 sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 sm:mt-10 mt-10 md:mt-0 lg:mt-0 xl:mt-0' >
                             <h1 className='text-black text-4xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl font-light text-center fuenteHurmeThin mt-24'>{item.titulo}</h1>
                             <p className='text-black text-center font-light fuenteCentury '>{item.description}</p>
                             <h5 className='text-black text-center font-bold fuenteCentury text-lg'>Tecnologías</h5>
                             <div className='flex flex-grow justify-center gap-8'>
-                                <img src={item.tecnologias[0]} alt="logo" loading='lazy' />
-                                <img src={item.tecnologias[1]} alt="logo" loading='lazy' />
-                                <img src={item.tecnologias[2]} alt="logo" loading='lazy' />
-                                <img src={item.tecnologias[3]} alt='logo' loading='lazy' />
+                                {item.tecnologias.map((i, index)=>(
+                                    <img key={index} src={i} alt="logo" loading='lazy' />
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -67,6 +75,8 @@ const SliderProjects = () => {
                                         </span>
                                     
                                 </a>
+                                
+                                
                                 <div className="divider text-white font-bold fuenteHurme lg:divider-horizontal">OR</div>
                                 <a  href={item.github} rel='noreferrer' target='_blank' className="grid flex-grow card bg-white rounded-lg place-items-center">
                                         <span className='text-6xl'>

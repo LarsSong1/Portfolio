@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   box-sizing: border-box;
   --color-morado: #A48BD1;

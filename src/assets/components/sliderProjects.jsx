@@ -15,6 +15,10 @@ import unemeeting from '../img/unemeeting.webp'
 import pocketimage from '../img/pocketbase.svg'
 import react_native from '../img/reactnative.svg'
 import native_base from '../img/nativebase.svg'
+import topten from '../img/topten.webp'
+import email from '../img/emailjs.svg'
+import nextjs from '../img/nextjs.svg'
+import markdown from '../img/markdown.svg'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -23,10 +27,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 const dataSwiper = [
+    { titulo: 'TopTen Products', description: 'Este proyecto es la adpaptacion de un blog desarrollado por StaticHunt que presenta informacion de los productos mas destacados de Páginas como Amazon, Shein y ebay, y redirige a los clientes a la pagina oficial de compra para que puedan adquirir el producto', tecnologias: [nextjs, markdown, email], image: topten, web: 'https://toptenproducts.netlify.app/', github: 'https://github.com/LarsSong1/blogLarson'},
     { titulo: 'Tyres&M', description: 'El presente proyecto fue creado para un negocio de venta de llantas y reencauche que cuenta con un sistema de contacto cliente-vendedor donde se puede visualizar todos los productos que ofrece el vendedor', tecnologias: [reactLogo, javaScript, bootstrap, css], image: tyresm, web: 'https://tyres-m.netlify.app/', github: 'https://github.com/LarsSong1/tyres-M.git'},
-    { titulo: 'TourByEcu', description: 'Este proyecto es una practica de una tendencia Web conocida como glashmorphismo la cual le da un toque de elegancia al sitio.', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu, web:'https://chimborazo-tour.netlify.app/', github: 'https://github.com/LarsSong1/Chimborazo-tour.git' },
+    { titulo: 'UneMeeting', description: 'Esta App fue creadada con el proposito de recopilar información referente a conferencias que se llevaban a cabo en una Universidad en un solo sitio, esta aplicacion móvil representa parte de una práctica', tecnologias: [react_native, pocketimage, native_base], image: unemeeting, web: 'https://drive.google.com/file/d/13WfRU3AWWBK28sckXK8KjCZkfUnjA5ol/view?usp=sharing', github:'https://github.com/LarsSong1/uneMeeting'},
     {titulo: 'App móvil', description: 'Esta App móvil esta basada en las distintas fases de dos pseudocódigo que devuelven el calculo del factor de fricción y del diseño de tuberias desarrollada para estudiantes de la universidad UPSE de la peninsula de Santa Elena', tecnologias: [flet], image: appcalc, web: 'https://drive.google.com/file/d/10ee_AqpPGOAU9-77VPBHG08XkPuxIoig/view?usp=sharing', github: 'https://github.com/LarsSong1/calculos-app-flet',},
-    { titulo: 'UneMeeting', description: 'Esta App fue creadada con el proposito de recopilar información referente a conferencias que se llevaban a cabo en una Universidad en un solo sitio, esta aplicacion móvil representa parte de una práctica', tecnologias: [react_native, pocketimage, native_base], image: unemeeting, web: '', github:'https://github.com/LarsSong1/uneMeeting'}
+    { titulo: 'TourByEcu', description: 'Este proyecto es una practica de una tendencia Web conocida como glashmorphismo la cual le da un toque de elegancia al sitio.', tecnologias: [html, css, javaScript, reactLogo], image: tourByEcu, web:'https://chimborazo-tour.netlify.app/', github: 'https://github.com/LarsSong1/Chimborazo-tour.git' },
 
 
 

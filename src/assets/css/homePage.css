@@ -153,11 +153,12 @@
         height: 1000px;
         width: 100%;
         z-index: 10;
+        margin-bottom: 20px;
 
     }
 
     .slideContent {
-        margin-top: 35%;
+        
         height: 100vh;
     }
     
@@ -328,3 +329,14 @@
 }
 
 
+
+
+@media screen and (max-width: 400px) {
+
+    .heroSection .designWeb {
+       
+        margin-bottom: 200px;
+
+    }
+
+}

@@ -163,6 +163,12 @@
     }
     
 
+    .heroSection .designWeb {
+       
+        margin-bottom: 380px;
+
+    }
+
 }
 
 
@@ -177,6 +183,11 @@
     .slideContent {
         margin-top: 20%;
         height: 100vh;
+    }
+
+    .heroSection .designWeb {
+        margin-bottom: 200px;
+
     }
     
 
@@ -333,9 +344,18 @@
 
 @media screen and (max-width: 400px) {
 
-    .heroSection .designWeb {
-       
+    .heroSection .designWeb { 
         margin-bottom: 200px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 361px) {
+
+    .heroSection .designWeb { 
+        margin-bottom: 290px;
 
     }
 

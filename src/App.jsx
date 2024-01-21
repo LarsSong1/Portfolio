@@ -10,6 +10,7 @@ import Form from './assets/pages/form'
 
 
 
+
 function App() {
   
 
@@ -20,6 +21,7 @@ function App() {
       <Navbar/>
         <Routes>
           <Route path='/'  element={<HomePage/>}/>
+          {/* <Route path='/'  element={<Home/>}/> */}
           <Route path='/contact' element={<Contact/>} />
           <Route path='/formcontact' element={<Form/>}/>
           <Route path='/formcontact/:plan' element={<Form/>}/>

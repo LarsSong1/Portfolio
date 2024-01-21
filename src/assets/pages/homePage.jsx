@@ -17,10 +17,6 @@ import CardSkill from '../components/cardSkill'
 
 const HomePage = () => {
 
-
-
-
-
     return (
         <main className='heroSection'>
             <section className='container justify-around items-center flex mx-auto flex-col sm:flex-col md:flex-row lg:flex-row xl:flex-row sm:justify-center'>
@@ -62,7 +58,7 @@ const HomePage = () => {
                 <div className='white-box flex flex-grow flex-col justify-start sm:top-0 md:justify-end lg:justify-end xl:justify-end '>
                     <div className='mini-box relative left-0 top-10 sm:top-10 md:top-0 lg:top-10 lg:left-0 xl:top-52 md:left-0 sm:left-0 xl:left-24 rounded-sm flex flex-col justify-center items-center pe-0 ps-0 xl:pe-10 2xl:pe-10 xl:ms-20 2xl:ms-28 sm:relative md:relative lg:absolute xl:absolute mb-20 sm:mb-20 md:mb-0 lg:mb-0 xl:mb-0'>
                         <h1 className='text-center text-black text-2xl font-normal  sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurmeThin mb-8'>Mi perfil como <br /> Diseñador <br /> <strong>Web</strong></h1>
-                        <h2 className='text-center text-black fuenteCentury'>Descubre quien esta detras de la <br /> pantalla y mis habilidades como <br /> Freelancer</h2>
+                        <h2 className='text-center text-black fuenteCentury'>Descubre quien esta detras de la <br /> pantalla y mis habilidades como <br /> Freelancer</h2> 
                     </div>
                     <div className='relative text-end pe-10 mb-5 w-full'>
                         <h5 className='text-black font-bold fuenteHurme'>Diseño</h5>

@@ -51,7 +51,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
             </div>
             <section className="grid place-items-center xl:grid-cols-2 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
 
-                <div className='faq mt-10 p-10'>
+                <div className='faq mt-10 p-10 '>
                     <h3 className='text-black text-3xl font-bold fuenteHurme'>Preguntas Frecuentes</h3>
                     <h4 className='text-black text-xl font-thin fuenteHurmeThin'>Preguntas que por lo general me hace la gente</h4>
                     <div className="collapse bg-base-200 mt-10 rounded-sm shadow-md">
@@ -93,7 +93,7 @@ function FormStructure({ segundaP, segundaRes, terceraP, terceraRes, cuartaP, cu
                 </div>
 
                 <div className='data mt-10 p-10'>
-                    <h3 className='text-black text-3xl font-bold fuenteHurme'>Información de Perfil</h3>
+                    <h3 className='text-black text-3xl font-bold fuenteHurme sm:pt-32 pt-32 md:pt-0 lg:pt-0 xl:pt-0 2xl:pt-0 '>Información de Perfil</h3>
                     <h4 className='text-black text-xl font-thin fuenteHurmeThin'>LLena los campos dependiendo de quien eres para ponerme en contacto contigo</h4>
                     <h3 className='text-black text-2xl font-bold fuenteHurme mt-2'>Datos personales</h3>
                     <h5 className="text-black text-lg font-thin fuenteHurmeThin">Estos datos serán usados como medio de contacto para el desarrollador </h5>

@@ -16,14 +16,14 @@ function Contact() {
           <h1 className=' text-blendGradient text-center bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black titulo-planes  '>Planes a tu <hr /> Medida</h1>
         </div>
 
-        <div className="card w-4/6 card-middle bg-white shadow-xl">
+        <div className="card w-4/6 lg:w-5/6 card-middle bg-white shadow-xl">
           <div className="card-body items-center justify-between text-center text-black">
             <ul className='text-left'>
               <h2 className="fuenteHurme font-light text-center text-4xl pb-5">StarterWeb</h2>
               <h1 className='text-center bg-clip-text text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pb-5'>$50-$200</h1>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
-                <p className='ps-4 text-base sm:text-base md:text-md lg:text-lg xl:text-lg font-bold'>Ideal para pequeños negocios</p>
+                <p className='ps-4 text-base sm:text-base md:text-md lg:text-lg xl:text-lg font-bold'>Landings Page o ChatBots</p>
               </li>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -51,14 +51,14 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="card w-4/6 bg-white shadow-xl">
+        <div className="card w-4/6 lg:w-5/6 bg-white shadow-xl">
           <div className="card-body items-center justify-between text-center text-black">
             <ul className='text-left'>
               <h2 className="fuenteHurme font-light text-center text-4xl pb-5">Avanzado</h2>
               <h1 className='text-center bg-clip-text text-2xl sm:text-2xl md:text-5xl lg:text-7xl xl:text-7xl fuenteHurme bg-gradient-to-b text-transparent from-violet-400 to-black pb-5'>$200-1000</h1>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
-                <p className='ps-4 text-base sm:text-base md:text-md lg:text-lg xl:text-lg font-bold'>Pagina Web O Landing Page</p>
+                <p className='ps-4 text-base sm:text-base md:text-md lg:text-lg xl:text-lg font-bold'>Pagina Web</p>
               </li>
               <li className='text-lg flex items-center'>
                 <ion-icon name="checkmark-outline"></ion-icon>
@@ -98,7 +98,7 @@ function Contact() {
 
 
       </section>
-      <section className='presentation relative flex items-center justify-end flex-row-reverse'>  
+      <section className='presentation relative flex items-center justify-end flex-row-reverse z-20'>  
         <div className='relative content-card flex items-end justify-center  flex-col '>
           <h1 className='text-white mx-auto top-32 relative fuenteHurme text-6xl lg:text-8xl xl:text-8xl slideLar'>Lar</h1>
           <h1 className='mx-auto top-20 relative bg-gradient-to-r from-violet-700 fuenteHurme to-indigo-400 bg-clip-text text-transparent text-6xl lg:text-8xl xl:text-8xl slideSon'>Son</h1>

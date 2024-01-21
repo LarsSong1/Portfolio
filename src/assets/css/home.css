@@ -1,0 +1,17 @@
+
+
+.hero-Section::before,
+.hero-Section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 30%;
+    right: 0;
+    background-color: black;
+    z-index: 10;
+    animation: slideWidth 1s ease-in-out forwards;
+    
+
+
+}

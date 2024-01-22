@@ -1,7 +1,8 @@
 import FormStructure from '../components/formStructure'
 import '../css/form.css'
 import { useParams } from 'react-router-dom'
-import starterplan from '../../../public/downloads/doc.pdf'
+import starterplan from '../../../public/downloads/starterweb.pdf'
+import avanzado from '../../../public/downloads/avanzado.pdf'
 
 function Form() {
 
@@ -22,10 +23,10 @@ function Form() {
         return (
             <FormStructure segundaP='¿Hay opciones de capacitación más avanzada para el usuario en este plan?' 
             segundaRes={'En efecto, se guiará al cliente durante todo el proceso, se le explicará la importancia de cada funcionalidad y mediante estandares de diseño y requerimientos del cliente se le entregará el producto final'}
-            terceraP={'¿Cuántas páginas incluye el plan StarterWeb?'}
-            terceraRes={'Este plan ofrece capacidad hasta para 8 de páginas, 2 adicionales y secciones según tus requisitos'}
+            terceraP={'¿Cuántas páginas incluye el plan Avanzado?'}
+            terceraRes={'Este plan ofrece capacidad hasta para 6 de páginas, 2 adicionales y secciones según tus requisitos'}
             cuartaP={'¿Cuántas revisiones y modificaciones puedo realizar en el diseño antes de la implementación final?'}
-            Pdf='downloads/doc.pdf' 
+            Pdf={avanzado}
             cuartaRes={'Incluye 3 rondas de revisiones para asegurarnos de que el diseño cumpla con tus expectativas antes de la implementación'}
             />
         )
